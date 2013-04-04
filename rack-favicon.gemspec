@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rack::Favicon::VERSION
   spec.authors       = ["Kohei Hasegawa"]
   spec.email         = ["ameutau@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{rack middleware to handle favicon}
+  spec.summary       = %q{rack middleware to handle favicon}
   spec.homepage      = ""
   spec.license       = "MIT"
 
