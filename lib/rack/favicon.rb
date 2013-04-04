@@ -19,6 +19,9 @@ module Rack
           path = ::File.expand_path('../favicon.ico', __FILE__)
         end
         response = [ ::File.open(path, 'rb') { |file| file.read } ]
+
+        headers["Content-Length"] = response.join.bytesize.to_s
+        headers["Content-Type"]   = "image/vnd.microsoft.icon"
       end
       [status, headers, response]
     end
